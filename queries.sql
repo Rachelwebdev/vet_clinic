@@ -19,3 +19,17 @@ WHERE RIGHT(name, 3) = 'mon';
 UPDATE animals
 SET species = 'pokemon'
 WHERE RIGHT(name, 3) != 'mon';
+
+DELETE FROM ANIMALS;
+
+ROLLBACK;
+
+DELETE FROM ANIMALS
+WHERE date_of_birth > '2022-01-01';
+
+UPDATE animals
+SET weight_kg = weight_kg * -1;
+
+UPDATE animals
+SET weight_kg = weight_kg * -1
+WHERE weight_kg < 0;
