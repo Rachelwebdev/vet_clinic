@@ -49,3 +49,12 @@ VALUES
  SELECT * FROM vets;
 
 
+INSERT INTO specializations (species_id,vets_id)
+VALUES ((SELECT id from species  WHERE species.name = 'Pokemon'),
+(SELECT id from vets WHERE vets.name = 'William Tatcher')),
+((SELECT id from species  WHERE species.name = 'Pokemon'),
+(SELECT id from vets WHERE vets.name = 'Stephanie Mendez')),
+((SELECT id from species  WHERE species.name = 'Digimon'),
+(SELECT id from vets WHERE vets.name = 'Stephanie Mendez')),
+((SELECT id from species  WHERE species.name = 'Digimon'),
+(SELECT id from vets WHERE vets.name = 'Jack Harkness'));
