@@ -45,3 +45,7 @@ VALUES
     ('Maisy Smith', 26, '2019-01-17'),
     ('Stephanie Mendez', 64, '1981-05-04'),
     ('Jack Harkness', 38, '2008-06-08');
+
+ SELECT * FROM vets;
+
+
